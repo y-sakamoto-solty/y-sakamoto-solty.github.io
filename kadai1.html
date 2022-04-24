@@ -6,17 +6,43 @@
         <body>
             <h1>応募フォーム（キャリア採用）</h1>
             <form action="post.php" method="post">
-                <label for="onamae">お名前：</label> <input id="onamae" type="text" name="yourname">
-                <p>性別を選択</p>
+                <div class="item">
+                    <label for="onamae">お名前：</label> <input id="onamae" type="text" name="yourname">
+                </div>
+                
+                <div class="item">
+                    <p>性別を選択</p>
                 <input id="male" type="radio" name="sex" value="male"> <label for="mail">男性</label>
                 <input id="female" type="radio" name="sex" value="female"> <label for="female">女性</label>
-                <label for="yubinbango">郵便番号：</label> <input id="yubinbango" type="number" name="postnum">
-                <label for="gojusho">ご住所：</label> <input id="gojusho" type="text" name="adress">
-                <label for="tel">TEL(携帯可)</label> <input id="tel" type="number" name="telnum">
-                <label for="emailadress">E-Mailアドレス</label> <input id="emailadress" type="email" name="email">
-                <label for="goshitsumon">ご質問等：</label> <textarea id="goshitsumon" name="comment"></textarea>
-                <label for="kiyaku">応募規約について</label> <input id="kiyaku" type="checkbox" name="doi" value="同意">
-                <input type="sumbit" value="送信"> <input type="reset" value="リセット">
+                </div>
+                
+                <div class="item">
+                    <label for="yubinbango">郵便番号：</label> <input id="yubinbango" type="number" name="postnum">
+                </div>
+                
+                <div class="item">
+                    <label for="gojusho">ご住所：</label> <input id="gojusho" type="text" name="adress">
+                </div>
+                
+                <div class="item">
+                    <label for="tel">TEL(携帯可)</label> <input id="tel" type="number" name="telnum">
+                </div>
+                
+                <div class="item">
+                    <label for="emailadress">E-Mailアドレス</label> <input id="emailadress" type="email" name="email">
+                </div>
+                
+                <div class="item">
+                    <label for="goshitsumon">ご質問等：</label> <textarea id="goshitsumon" name="comment"></textarea>
+                </div>
+                
+                <div class="item">
+                    <label for="kiyaku">応募規約について</label> <input id="kiyaku" type="checkbox" name="doi" value="同意">
+                </div>
+                
+                <div class="item">
+                    <input type="submit" value="送信"> <input type="reset" value="リセット">
+                </div>
             </form>
         </body>
     </head>
