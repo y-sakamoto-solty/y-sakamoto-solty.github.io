@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1>応募フォーム（キャリア採用）</h1>            
-        <form　id="formId" action="" method="get">
+        <form action="get.html" method="get" onSubmit="CheckSubmit()">
             <div class="item">
                 <label for="onamae">お名前：</label> <input id="onamae" type="text" name="yourname">
             </div>
@@ -46,6 +46,15 @@
                 <input type="submit" value="送信"> <input type="reset" value="リセット">
             </div>
         </form>
-        <script src="scripts/kadai1.js"></script>
+        <script>
+            function CheckSubmit(){
+                if(confirm('送信しますか？')){
+                    return true;
+                }else{
+                    alert('キャンセルされました');
+                    return false;
+                }
+            }
+        </script>
     </body>
 </html>
