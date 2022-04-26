@@ -1,5 +1,5 @@
 const formElement = document.querySelector('form');
 
 formElement.addEventListener('submit', function() {
-    location.href = 'get.html';
+    console.log('送信が完了しました！！');
 })
