@@ -1,5 +1,5 @@
-let submitElement = document.querySelector('submit');
+let formElement = document.querySelector('form');
 
-formElement.addEventListener('click', function() {
-    console.log('送信が完了しました！！');
+formElement.addEventListener('submit', function() {
+    location.href = 'get_js.html';
 })
