@@ -8,12 +8,16 @@
     <body>
         <form>
             <h2>足し算</h2>
-            <input type="number" name="a"> + <input type="number" name="b"> =
-            <p><input type="button" id="result1" onclick="plus(a.value, b.value);" value="計算"></p>
+            <input type="number" name="a"> +
+            <input type="number" name="b"> =
+            <input type="number" id="result1">
+            <input type="button" onclick="plus(a.value, b.value);" value="計算">
             
             <h2>掛け算</h2>
-            <input type="number" name="c"> × <input type="number" name="d"> =
-            <p><input type="button" id="result2" onclick="mult(c.value, d.value);" value="計算"></p>
+            <input type="number" name="c"> ×
+            <input type="number" name="d"> =
+            <input type="number" id="result2">
+            <input type="button" onclick="mult(c.value, d.value);" value="計算">
         </form>
 
         <script>
