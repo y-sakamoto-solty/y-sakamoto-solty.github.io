@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>計算テスト</title>
+    </head>
+
+    <body>
+        <form>
+            <h2>足し算</h2>
+            <input type="number" name="a"> + <input type="number" name="b"> =
+            <p><input type="button" id="result1" onclick="plus(a.value, b.value);" value="計算"></p>
+            
+            <h2>掛け算</h2>
+            <input type="number" name="c"> × <input type="number" name="d"> =
+            <p><input type="button" id="result2" onclick="mult(c.value, d.value);" value="計算"></p>
+        </form>
+
+        <script>
+            function plus(x, y){
+                document.getElementById('result1').value = Math.round(x + y);
+            }
+
+            function mult(x, y){
+                document.getElementById('result2').value = Math.round(x * y);
+            }
+        </script>
+    </body>
+</html>
