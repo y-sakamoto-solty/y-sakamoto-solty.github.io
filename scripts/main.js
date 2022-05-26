@@ -29,6 +29,6 @@ if(!localStorage.getItem('name')){
     myHeading.textContent = 'Mozilla はすばらしいよ、' + storedName;
 }
 
-myButtun.onclick = function(){
+myButton.onclick = function(){
     setUserName();
 }
